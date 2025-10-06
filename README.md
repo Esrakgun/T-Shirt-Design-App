@@ -1,71 +1,131 @@
-# Getting Started with Create React App
+👕 T-Shirt Design App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Kendi tişört tasarımını oluştur, görselleştir ve kaydet! 🎨
 
-## Available Scripts
+T-Shirt Design App, kullanıcıların kendi tişört tasarımlarını kolayca oluşturabileceği, renk, yazı ve görsel ekleyebileceği, interaktif bir React uygulamasıdır. Tasarımlar Firebase Storage ile güvenli bir şekilde yönetilir ve Redux ile uygulama genelinde saklanır.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+🎯 Proje Hedefi:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Bu proje, tasarım odaklı bir deneyim sunarak kullanıcıların hayalindeki tişörtü yaratmasına olanak sağlar. Hem React geliştiricileri hem de frontend öğrenenler için component tasarımı, state yönetimi ve görsel etkileşim örneği sunar.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+🧩 Kullanıcı Kitlesi:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Kendi tişört tasarımını yapmak isteyen kullanıcılar
 
-### `npm run build`
+Frontend geliştirme ile ilgilenen yazılımcılar
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Tasarım ve React component yapısını öğrenmek isteyen öğrenciler
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🚀 Özellikler:
 
-### `npm run eject`
+Dashboard: Tişört rengini seçme, üst ve alt yazı ekleme, metin boyutu ve rengini değiştirme
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Görsel Yükleme: Firebase Storage üzerinden görsel ekleyip anında önizleme
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Display: Tasarımı canlı olarak gösterme
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Project / ProjectList: Kaydedilen tüm tasarımları listeleme
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Redux Reducers:
 
-## Learn More
+designReducer — Tasarımları state’de saklar, SAVE_DESIGN action’ı ile kaydeder
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+authReducer — Kullanıcı oturumları için (ileride genişletilebilir)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+React Router DOM: Sayfa geçişleri ve navigasyon
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+⚙️ Kullanılan Teknolojiler:
 
-### Analyzing the Bundle Size
+React — Component yapısı ve kullanıcı arayüzü
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Redux & Redux Thunk — State yönetimi
 
-### Making a Progressive Web App
+Firebase Storage — Kullanıcı görsellerinin yüklenmesi ve alınması
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Cloudinary — Tişört görselleri için hızlı ve güvenilir kaynak
 
-### Advanced Configuration
+Bootstrap & CSS — Responsive ve modern tasarım
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
+📂 Proje Yapısı:
+src/
+ ├─ components/
+ │   ├─ dashboard/      # Dashboard, Display, Setting
+ │   ├─ navbar/         # Navbar
+ │   └─ project/        # Project, ProjectList
+ ├─ store/
+ │   ├─ actions/        # saveDesignAction
+ │   ├─ reducers/       # designReducer, authReducer, mainReducer
+ │   └─ store.js        # Redux store
+ ├─ App.jsx
+ └─ index.jsx
+ 
+---
 
-### Deployment
+📅 Gelecek Planları:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+👩‍🎨 Kişisel portfolyo bölümü eklenerek projelerin tanıtılması.
 
-### `npm run build` fails to minify
+💬 İletişim formu entegrasyonu ile ziyaretçilerle etkileşim sağlanması.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# tshirtapp
+🌍 Çoklu dil desteği (TR / EN) eklenmesi.
+
+🌍Kullanıcı oturum açma ve profil yönetimi ekleme
+
+🌍Tasarım paylaşma ve indirilebilir görsel formatları sunma
+
+🌍Farklı ürünler (hoodie, çanta vb.) için tasarım seçenekleri
+
+🌍Responsive ve mobil deneyimi daha da iyileştirme
+
+---
+
+💡 Kullanım:
+
+Projeyi klonlayın:
+
+git clone https://github.com/esraakgundogdu/tshirt-app.git
+
+
+Bağımlılıkları yükleyin:
+
+npm install
+
+
+Uygulamayı başlatın:
+
+npm start
+
+
+src/firebase.js dosyasındaki Firebase Storage bilgilerini kendi projenize göre güncelleyin.
+
+---
+
+🖋️ Sonuç:
+
+Bu proje, React geliştiricileri için örnek bir frontend uygulamadır.
+Kullanıcılar tasarım yaparken, component tabanlı yapı, state yönetimi ve Firebase Storage ile görsel yükleme özelliklerini deneyimleyebilir.
+
+---
+
+💬 İletişim Proje hakkında sorularınız varsa, lütfen benimle iletişime geçin: E-posta: akgundogduesr@gmail.com
+
+---
+
+🖼️ Proje Ekran Görüntüleri:
+
+
+https://github.com/user-attachments/assets/9cc42bd3-bbd9-42bd-a9c5-d312a78e14b8
+
+
+
+
+
